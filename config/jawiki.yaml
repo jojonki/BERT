@@ -1,0 +1,13 @@
+model_params:
+  vocab_size: 32000
+
+training_params:
+  train_f: 'corpora/jawiki/wiki.txt'
+  model_prefix: 'corpora/jawiki/spm'
+  seq_len: 128
+  batch_size: 200
+  n_workers: 8
+  max_epochs: 10
+  log_every_n_steps: 2
+  ckpt_save_interval: 10000
+
